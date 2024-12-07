@@ -1,0 +1,107 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Fonte personalizada pode ser adicionada aqui */
+  background-color: #1c1c1c; /* Preto acinzentado */
+  color: #f5f5f5; /* Branco */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #292929; /* Preto acinzentado mais claro */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #ffffff;
+}
+
+header p {
+  color: #aaaaaa;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #333;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #f5f5f5;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff4444; /* Vermelho ao passar o mouse */
+}
+
+section {
+  padding: 20px;
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.category-item {
+  background: #292929;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 40px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #f5f5f5;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.category-item:hover i {
+  color: #28a745; /* Verde ao clicar */
+}
+
+.category-item i {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #aaaaaa;
+  transition: color 0.3s;
+}
+
+footer {
+  background: #292929;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #ffcc00; /* Amarelo */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ff4444; /* Vermelho */
+}
